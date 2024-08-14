@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/edit_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:digits="abcçdefgğhıijklmnoöpqrsştuüvwxyzABCÇDEFGĞHIİJKLMNOÖPQRSŞTUÜVWXYZ"
+        android:hint="Edit Expense/Income Type" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/check_editdate"
+        android:layout_centerHorizontal="false">
+
+        <RadioButton
+            android:id="@+id/check_income"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Income"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/check_expense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expense"
+            android:layout_below="@+id/check_income"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:checked="false"
+            />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="100sp"
+        android:layout_height="50sp"
+        android:layout_below="@+id/check_editdate"
+        android:layout_centerHorizontal="true"
+        android:text="@string/my_search">
+
+    </Button>
+
+
+    <TextView
+        android:id="@+id/check_editdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_spinner"
+
+
+        android:digits="0123456789./"
+        android:hint="Enter Date"
+        android:inputType="date"
+        android:singleLine="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        />
+
+    <Spinner
+        android:id="@+id/new_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogroup3"
+        android:singleLine="true"
+        android:digits="abcçdefgğhıijklmnoöpqrsştuüvwxyzABCÇDEFGĞHIİJKLMNOÖPQRSŞTUÜVWXYZ"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="43dp"
+        android:hint="Enter Income/Expense Type"
+        android:enabled="false"/>
+
+    <EditText
+        android:id="@+id/edit_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Value"
+        android:singleLine="true"
+        android:digits="0123456789"
+        android:layout_below="@+id/new_spinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:inputType="numberDecimal"
+        android:enabled="false"/>
+
+    <TextView
+        android:id="@+id/editDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Date"
+        android:inputType="date"
+        android:singleLine="true"
+        android:digits="0123456789./"
+        android:layout_below="@+id/edit_value"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:enabled="false"/>
+
+
+
+
+</RelativeLayout>

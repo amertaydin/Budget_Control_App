@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context=".Register">
+
+    <EditText
+        android:id="@+id/NameRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentTop="true"
+
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="Name"
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+
+        android:inputType="text"
+        android:textColor="#fff"
+        android:textColorHint="#fff"
+        android:singleLine="true"
+        android:digits="abcçdefgğhıijklmnoöpqrsştuüvwxyzABCÇDEFGĞHIİJKLMNOÖPQRSŞTUÜVWXYZ "
+
+        />
+
+    <EditText
+        android:id="@+id/SurnameRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/NameRegister"
+
+
+        android:layout_marginTop="30dp"
+        android:singleLine="true"
+        android:digits="abcçdefgğhıijklmnoöpqrsştuüvwxyzABCÇDEFGĞHIİJKLMNOÖPQRSŞTUÜVWXYZ"
+
+        android:drawableLeft="@drawable/ic_person_black_24dp"
+        android:ems="10"
+        android:hint="Surname"
+        android:inputType="text"
+
+        android:textColor="#fff"
+        android:textColorHint="#fff" />
+
+    <EditText
+        android:id="@+id/MailRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:digits="abcçdefgğhıijklmnoöpqrsştuüvwxyzABCÇDEFGĞHIİJKLMNOÖPQRSŞTUÜVWXYZ@123456789."
+        android:layout_below="@+id/UsernameRegister"
+        android:layout_centerHorizontal="true"
+
+
+        android:layout_marginTop="30dp"
+
+
+        android:drawableLeft="@drawable/ic_mail_black_24dp"
+        android:ems="10"
+        android:hint="Mail"
+        android:inputType="textEmailAddress"
+        android:textColor="#fff"
+        android:textColorHint="#FFFFFF" />
+
+    <EditText
+        android:id="@+id/PasswordRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/MailRegister"
+
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:ems="10"
+        android:hint="Password"
+        android:singleLine="true"
+        android:maxLength="4"
+        android:digits="0123456789"
+        android:inputType="numberPassword"
+        android:textColor="#fff"
+        android:textColorHint="#FFFFFF" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/PasswordRegister"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:clickable="true"
+        android:foreground="?attr/selectableItemBackground"
+        app:cardBackgroundColor="@color/colorAccent"
+        app:cardCornerRadius="25dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+
+                android:text="Register"
+                android:textColor="#fff"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/UsernameRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/SurnameRegister"
+        android:singleLine="true"
+        android:digits="abcçdefgğhıijklmnoöpqrsştuüvwxyzABCÇDEFGĞHIİJKLMNOÖPQRSŞTUÜVWXYZ123456789."
+        android:layout_marginTop="30dp"
+        android:drawableLeft="@drawable/ic_person_pin_black_24dp"
+        android:ems="10"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColor="#ffffff"
+        android:textColorHint="#ffffff" />
+
+</RelativeLayout>

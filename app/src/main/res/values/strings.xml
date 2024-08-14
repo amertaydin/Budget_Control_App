@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Thesis</string>
+    <string name="aa" />
+    <string name="aaa">aa</string>
+    <string name="my_search">SEARCH</string>
+    
+    <string-array name="type_income">
+        <item>Salary</item>
+        <item>Rent</item>
+        <item>Savings</item>
+        <item>Prizes</item>
+        <item>Social Payments</item>
+        <item>Other</item>
+    </string-array>
+
+    <string-array name="type_expense">
+        <item>Rent</item>
+        <item>Shopping</item>
+        <item>Taxes</item>
+        <item>Utilities</item>
+        <item>Loans</item>
+        <item>Online Expenses</item>
+        <item>Transportation</item>
+        <item>Medical and Healthcare</item>
+        <item>Entertainment</item>
+        <item>Other</item>
+    </string-array>
+
+</resources>

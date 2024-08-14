@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.thesis">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Budget Control Tool"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Edition_Alert"></activity>
+        <activity android:name=".Deletion_Alert" />
+        <activity android:name=".Addition_Alert" />
+        <activity android:name=".Manage" android:label="Manage"/>
+        <activity android:name=".Status" />
+        <activity android:name=".Assessment" />
+        <activity android:name=".Transcript" android:label="Transcript"/>
+        <activity android:name=".ActivityExpense" android:label="Expenses"/>
+        <activity android:name=".ActivityIncome" android:label="Incomes"/>
+        <activity android:name=".Menu" android:label="Main Menu"/>
+        <activity android:name=".Register"  android:label="Register"/>
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
